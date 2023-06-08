@@ -33,18 +33,17 @@ function Newsletter() {
       <Container>
         <Grid container alignItems="center">
           <Grid item sx={12} md={6} sx={{ ml: { xs: 0, lg: 3 }, mb: { xs: 12, md: 0 } }}>
-            <MKTypography variant="h4">Be the first to see the news</MKTypography>
+            <MKTypography variant="h4">¿Quieres estar al día?</MKTypography>
             <MKTypography variant="body2" color="text" mb={3}>
-              Your company may not be in the software business, but eventually, a software company
-              will be in your business.
+              Te lo ponemos fácil. Sólo tienes que proporcionarnos un correo electrónico.
             </MKTypography>
             <Grid container spacing={1}>
               <Grid item xs={8}>
-                <MKInput type="email" label="Email Here..." fullWidth />
+                <MKInput type="email" label="Correo electrónico" fullWidth />
               </Grid>
               <Grid item xs={4}>
                 <MKButton variant="gradient" color="info" sx={{ height: "100%" }}>
-                  Subscribe
+                  Suscribirme
                 </MKButton>
               </Grid>
             </Grid>
