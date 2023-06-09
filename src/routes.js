@@ -42,9 +42,7 @@ import Icon from "@mui/material/Icon";
 // @mui icons
 
 // Pages
-import AboutUs from "layouts/pages/landing-pages/about-us";
-import ContactUs from "layouts/pages/landing-pages/contact-us";
-import Author from "layouts/pages/landing-pages/author";
+import TarifasMoviles from "layouts/pages/landing-pages/tarifasMoviles";
 
 // Sections
 import PageHeaders from "layouts/sections/page-sections/page-headers";
@@ -68,29 +66,29 @@ import Typography from "layouts/sections/elements/typography";
 
 const routes = [
   {
-    name: "pages",
+    name: "Secciones",
     icon: <Icon></Icon>,
     columns: 1,
     rowsPerColumn: 2,
     collapse: [
       {
-        name: "landing pages",
+        name: "Servicios disponibles",
         collapse: [
           {
-            name: "about us",
-            route: "/pages/landing-pages/about-us",
-            component: <AboutUs />,
+            name: "tarifas moviles",
+            route: "/pages/landing-pages/tarifasMoviles",
+            component: <TarifasMoviles />,
           },
-          {
-            name: "contact us",
-            route: "/pages/landing-pages/contact-us",
-            component: <ContactUs />,
-          },
-          {
-            name: "author",
-            route: "/pages/landing-pages/author",
-            component: <Author />,
-          },
+          // {
+          //   name: "contact us",
+          //   route: "/pages/landing-pages/contact-us",
+          //   component: <ContactUs />,
+          // },
+          // {
+          //   name: "author",
+          //   route: "/pages/landing-pages/author",
+          //   component: <Author />,
+          // },
         ],
       },
     ],

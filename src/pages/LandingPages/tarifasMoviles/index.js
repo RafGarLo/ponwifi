@@ -26,9 +26,9 @@ import MKTypography from "components/MKTypography";
 import DefaultNavbar from "examples/Navbars/DefaultNavbar";
 import DefaultFooter from "examples/Footers/DefaultFooter";
 
-// About Us page sections
-import Information from "pages/LandingPages/AboutUs/sections/Information";
-import Team from "pages/LandingPages/AboutUs/sections/Team";
+// Tarifas Moviles page sections
+import Information from "pages/LandingPages/tarifasMoviles/sections/Information";
+import Team from "pages/LandingPages/tarifasMoviles/sections/Team";
 
 // Routes
 import routes from "routes";
@@ -36,8 +36,9 @@ import footerRoutes from "footer.routes";
 
 // Images
 import tarifas_moviles from "assets/images/tarifas_moviles.webp";
+import Newsletter from "./sections/Newsletter";
 
-function AboutUs() {
+function TarifasMoviles() {
   return (
     <>
       <DefaultNavbar
@@ -114,6 +115,7 @@ function AboutUs() {
       >
         <Information />
         <Team />
+        <Newsletter />
       </Card>
       <MKBox pt={6} px={1} mt={6}>
         <DefaultFooter content={footerRoutes} />
@@ -122,4 +124,4 @@ function AboutUs() {
   );
 }
 
-export default AboutUs;
+export default TarifasMoviles;
