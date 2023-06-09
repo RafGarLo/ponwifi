@@ -5,43 +5,36 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import MKTypography from "components/MKTypography";
 
 // Images
-import logoCT from "assets/images/logo-ct-dark.png";
+import blackLogoNoBckg from "assets/images/small-logos/blackLogoNoBckg.png";
 
 const date = new Date().getFullYear();
 
 export default {
   brand: {
     name: "Ponwifi Pontevedra",
-    image: logoCT,
+    image: blackLogoNoBckg,
     route: "/",
   },
   socials: [
     {
       icon: <FacebookIcon />,
-      link: "https://www.facebook.com/ponwifipontevedra/",
+      link: "https://www.facebook.com/ponwifi.pontevedra.es/",
     },
-    // {
-    //   icon: <YouTubeIcon />,
-    //   link: "https://www.youtube.com/channel/UCVyTG4sCw-rOvB9oHkzZD1w",
-    // },
   ],
   menus: [
     {
-      name: "company",
+      name: "Nuestra Empresa",
       items: [
         { name: "about us", href: "https://www.creative-tim.com/presentation" },
         { name: "freebies", href: "https://www.creative-tim.com/templates/free" },
-        { name: "premium tools", href: "https://www.creative-tim.com/templates/premium" },
         { name: "blog", href: "https://www.creative-tim.com/blog" },
       ],
     },
     {
-      name: "help & support",
+      name: "Contacto",
       items: [
         { name: "contact us", href: "https://www.creative-tim.com/contact-us" },
-        { name: "knowledge center", href: "https://www.creative-tim.com/knowledge-center" },
         { name: "custom development", href: "https://services.creative-tim.com/" },
-        { name: "sponsorships", href: "https://www.creative-tim.com/sponsorships" },
       ],
     },
     {

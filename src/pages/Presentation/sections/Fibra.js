@@ -30,7 +30,7 @@ import DefaultInfoCard from "examples/Cards/InfoCards/DefaultInfoCard";
 import bgFront from "assets/images/rotating-card-bg-front.jpeg";
 import bgBack from "assets/images/rotating-card-bg-back.jpeg";
 
-function Information() {
+function Fibra() {
   return (
     <MKBox component="section" py={6} my={6}>
       <Container>
@@ -39,24 +39,24 @@ function Information() {
             <RotatingCard>
               <RotatingCardFront
                 image={bgFront}
-                icon="touch_app"
+                icon="wifi"
                 title={
                   <>
-                    Feel the
+                    Internet en
                     <br />
-                    Material Kit
+                    todas sus versiones
                   </>
                 }
-                description="All the MUI components that you need in a development have been re-design with the new look."
+                description="Internet Fibra a la máxima velocidad en zonas de cobertura, e Internet WIMAX donde no llega el resto."
               />
               <RotatingCardBack
                 image={bgBack}
-                title="Discover More"
-                description="You will save a lot of time going from prototyping to full-functional code because all elements are implemented."
+                title="¡No te ovides de tu móvil!"
+                description="Tenemos tarifas móviles que van desde los 6 euros para ahorrar, hasta los 400GB para los que lo quieren todo."
                 action={{
                   type: "internal",
                   route: "/sections/page-sections/page-headers",
-                  label: "start with header",
+                  label: "Te esperamos",
                 }}
               />
             </RotatingCard>
@@ -65,33 +65,32 @@ function Information() {
             <Grid container spacing={3}>
               <Grid item xs={12} md={6}>
                 <DefaultInfoCard
-                  icon="content_copy"
-                  title="Full Documentation"
-                  description="Built by developers for developers. Check the foundation and you will find
-                    everything inside our documentation."
+                  icon="network_check"
+                  title="Internet Fibra 100MB"
+                  description="100MB de fibra simétrica por tan sólo 21 euros al mes."
                 />
               </Grid>
               <Grid item xs={12} md={6}>
                 <DefaultInfoCard
-                  icon="flip_to_front"
-                  title="MUI Ready"
-                  description="The world's most popular react components library for building user interfaces."
+                  icon="network_check"
+                  title="Internet Fibra 300MB"
+                  description="300MB de fibra simétrica por tan sólo 25 euros al mes."
                 />
               </Grid>
             </Grid>
             <Grid container spacing={3} sx={{ mt: { xs: 0, md: 6 } }}>
               <Grid item xs={12} md={6}>
                 <DefaultInfoCard
-                  icon="price_change"
-                  title="Save Time & Money"
-                  description="Creating your design from scratch with dedicated designers can be very expensive. Start with our Design System."
+                  icon="network_check"
+                  title="Internet Fibra 600MB"
+                  description="600MB de fibra simétrica por tan sólo 30 euros al mes."
                 />
               </Grid>
               <Grid item xs={12} md={6}>
                 <DefaultInfoCard
-                  icon="devices"
-                  title="Fully Responsive"
-                  description="Regardless of the screen size, the website content will naturally fit the given resolution."
+                  icon="network_check"
+                  title="Internet Fibra 1GB"
+                  description="1GB de fibra simétrica por tan sólo 38 euros al mes."
                 />
               </Grid>
             </Grid>
@@ -102,4 +101,4 @@ function Information() {
   );
 }
 
-export default Information;
+export default Fibra;

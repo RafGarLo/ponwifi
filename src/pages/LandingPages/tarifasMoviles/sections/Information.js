@@ -30,7 +30,7 @@ function Information() {
       <Container>
         <Grid container spacing={3} alignItems="center">
           <Grid item xs={12} lg={6}>
-            <Grid container justifyContent="flex-start">
+            <Grid title="TARIFAS" container justifyContent="flex-start">
               <Grid item xs={12} md={6}>
                 <MKBox mb={5}>
                   <DefaultInfoCard
@@ -103,9 +103,9 @@ function Information() {
               description="Contamos con la cobertura de red Movistar, Vodafone y Orange."
               action={{
                 type: "internal",
-                route: "pages/company/about-us",
+                route: "pages/company/about-us", // RECUERDA CREAR ESTA SECCIÓN PARA QUE ENRUTE ALLÍ
                 color: "info",
-                label: "Llámanos",
+                label: "TE FALTA ENRUTAR",
               }}
             />
           </Grid>

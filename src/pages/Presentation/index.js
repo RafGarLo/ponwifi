@@ -21,7 +21,6 @@ import Card from "@mui/material/Card";
 // Material Kit 2 React components
 import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
-import MKSocialButton from "components/MKSocialButton";
 
 // Material Kit 2 React examples
 import DefaultNavbar from "examples/Navbars/DefaultNavbar";
@@ -29,15 +28,13 @@ import DefaultFooter from "examples/Footers/DefaultFooter";
 import FilledInfoCard from "examples/Cards/InfoCards/FilledInfoCard";
 
 // Presentation page sections
-import Counters from "pages/Presentation/sections/Counters";
-import Information from "pages/Presentation/sections/Information";
+import Fibra from "pages/Presentation/sections/Fibra";
+import FibraPaquetes from "./sections/FibraPaquetes";
 import DesignBlocks from "pages/Presentation/sections/DesignBlocks";
 import Pages from "pages/Presentation/sections/Pages";
-import Testimonials from "pages/Presentation/sections/Testimonials";
-import Download from "pages/Presentation/sections/Download";
 
 // Presentation page components
-import BuiltByDevelopers from "pages/Presentation/components/BuiltByDevelopers";
+import TrabajamosContigo from "pages/Presentation/components/trabajamosContigo";
 
 // Routes
 import routes from "routes";
@@ -54,7 +51,7 @@ function Presentation() {
         action={{
           type: "external",
           route: "https://www.creative-tim.com/product/material-kit-react",
-          label: "PEPE",
+          label: "NAVEGACIÓN",
           color: "info",
         }}
         sticky
@@ -92,7 +89,7 @@ function Presentation() {
               px={{ xs: 6, lg: 12 }}
               mt={1}
             >
-              Aquí encontrarás buenas tarifas en telecomunicaciones y gran trato a nuestros
+              Aquí encontrarás geniales tarifas en telecomunicaciones y gran trato a nuestros
               clientes.
             </MKTypography>
           </Grid>
@@ -109,13 +106,13 @@ function Presentation() {
           boxShadow: ({ boxShadows: { xxl } }) => xxl,
         }}
       >
-        <Counters />
-        <Information />
+        <Fibra />
+        <Container sx={{ mt: 6 }}>
+          <TrabajamosContigo />
+        </Container>
+        <FibraPaquetes />
         <DesignBlocks />
         <Pages />
-        <Container sx={{ mt: 6 }}>
-          <BuiltByDevelopers />
-        </Container>
         <Container>
           <Grid container spacing={3}>
             <Grid item xs={12} lg={4}>
@@ -160,9 +157,9 @@ function Presentation() {
             </Grid>
           </Grid>
         </Container>
-        <Testimonials />
-        <Download />
-        <MKBox pt={18} pb={6}>
+        {/* <Testimonials /> */}
+        {/* <Download /> */}
+        {/* <MKBox pt={18} pb={6}>
           <Container>
             <Grid container spacing={3}>
               <Grid item xs={12} lg={5} ml="auto" sx={{ textAlign: { xs: "center", lg: "left" } }}>
@@ -213,7 +210,7 @@ function Presentation() {
               </Grid>
             </Grid>
           </Container>
-        </MKBox>
+        </MKBox> */}
       </Card>
       <MKBox pt={6} px={1} mt={6}>
         <DefaultFooter content={footerRoutes} />

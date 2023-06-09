@@ -53,13 +53,13 @@ function TarifasMoviles() {
         light
       />
       <MKBox
-        minHeight="75vh"
+        minHeight="70vh"
         width="100%"
         sx={{
           backgroundImage: ({ functions: { linearGradient, rgba }, palette: { gradients } }) =>
             `${linearGradient(
-              rgba(gradients.dark.main, 0.6),
-              rgba(gradients.dark.state, 0.6)
+              rgba(gradients.dark.main, 0.2),
+              rgba(gradients.dark.state, 0.2)
             )}, url(${tarifas_moviles})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
@@ -93,14 +93,6 @@ function TarifasMoviles() {
               Gigas que se acumulan, una gran relación calidad-precio y nuestro soporte
               personalizado.
             </MKTypography>
-            {/* <MKTypography variant="h6" color="white" mt={8} mb={1}>
-              Redes Sociales
-            </MKTypography>
-            <MKBox display="flex" justifyContent="center" alignItems="center">
-              <MKTypography component="a" variant="body1" color="white" href="#" mr={3}>
-                <i className="fab fa-facebook" />
-              </MKTypography>
-            </MKBox> */}
           </Grid>
         </Container>
       </MKBox>
