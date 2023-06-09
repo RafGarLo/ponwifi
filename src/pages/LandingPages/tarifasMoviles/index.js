@@ -26,9 +26,9 @@ import MKTypography from "components/MKTypography";
 import DefaultNavbar from "examples/Navbars/DefaultNavbar";
 import DefaultFooter from "examples/Footers/DefaultFooter";
 
-// About Us page sections
-import Information from "pages/LandingPages/AboutUs/sections/Information";
-import Team from "pages/LandingPages/AboutUs/sections/Team";
+// Tarifas Moviles page sections
+import Information from "pages/LandingPages/tarifasMoviles/sections/Information";
+import Team from "pages/LandingPages/tarifasMoviles/sections/Team";
 
 // Routes
 import routes from "routes";
@@ -36,8 +36,9 @@ import footerRoutes from "footer.routes";
 
 // Images
 import tarifas_moviles from "assets/images/tarifas_moviles.webp";
+import Newsletter from "./sections/Newsletter";
 
-function AboutUs() {
+function TarifasMoviles() {
   return (
     <>
       <DefaultNavbar
@@ -52,13 +53,13 @@ function AboutUs() {
         light
       />
       <MKBox
-        minHeight="75vh"
+        minHeight="70vh"
         width="100%"
         sx={{
           backgroundImage: ({ functions: { linearGradient, rgba }, palette: { gradients } }) =>
             `${linearGradient(
-              rgba(gradients.dark.main, 0.6),
-              rgba(gradients.dark.state, 0.6)
+              rgba(gradients.dark.main, 0.2),
+              rgba(gradients.dark.state, 0.2)
             )}, url(${tarifas_moviles})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
@@ -92,14 +93,6 @@ function AboutUs() {
               Gigas que se acumulan, una gran relación calidad-precio y nuestro soporte
               personalizado.
             </MKTypography>
-            {/* <MKTypography variant="h6" color="white" mt={8} mb={1}>
-              Redes Sociales
-            </MKTypography>
-            <MKBox display="flex" justifyContent="center" alignItems="center">
-              <MKTypography component="a" variant="body1" color="white" href="#" mr={3}>
-                <i className="fab fa-facebook" />
-              </MKTypography>
-            </MKBox> */}
           </Grid>
         </Container>
       </MKBox>
@@ -114,6 +107,7 @@ function AboutUs() {
       >
         <Information />
         <Team />
+        <Newsletter />
       </Card>
       <MKBox pt={6} px={1} mt={6}>
         <DefaultFooter content={footerRoutes} />
@@ -122,4 +116,4 @@ function AboutUs() {
   );
 }
 
-export default AboutUs;
+export default TarifasMoviles;

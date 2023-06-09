@@ -16,13 +16,12 @@ Coded by www.creative-tim.com
 // @mui material components
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
-import Icon from "@mui/material/Icon";
 
 // Material Kit 2 React components
 import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
 
-function BuiltByDevelopers() {
+function TrabajamosContigo() {
   const bgImage =
     "https://raw.githubusercontent.com/creativetimofficial/public-assets/master/soft-ui-design-system/assets/img/desktop.jpg";
 
@@ -46,40 +45,14 @@ function BuiltByDevelopers() {
       <Container>
         <Grid container item xs={12} lg={6} sx={{ ml: { xs: 0, lg: 6 } }}>
           <MKTypography variant="h4" color="white" fontWeight="bold">
-            Built by developers
+            Trabajamos contigo
           </MKTypography>
           <MKTypography variant="h1" color="white" mb={1}>
-            Complex Documentation
+            Fibra - Móvil - Fijo - TV - Seguridad
           </MKTypography>
           <MKTypography variant="body1" color="white" opacity={0.8} mb={2}>
-            From colors, cards, typography to complex elements, you will find the full
-            documentation. Play with the utility classes and you will create unlimited combinations
-            for our components.
-          </MKTypography>
-          <MKTypography
-            component="a"
-            href="https://www.creative-tim.com/learning-lab/react/overview/material-kit/"
-            target="_blank"
-            rel="noreferrer"
-            variant="body2"
-            color="white"
-            fontWeight="regular"
-            sx={{
-              display: "flex",
-              alignItems: "center",
-
-              "& .material-icons-round": {
-                fontSize: "1.125rem",
-                transform: `translateX(3px)`,
-                transition: "transform 0.2s cubic-bezier(0.34, 1.61, 0.7, 1.3)",
-              },
-
-              "&:hover .material-icons-round, &:focus .material-icons-round": {
-                transform: `translateX(6px)`,
-              },
-            }}
-          >
-            Read docs <Icon sx={{ fontWeight: "bold" }}>arrow_forward</Icon>
+            Contamos con un amplio portfolio de acuerdos y proveedores que nos permiten ofrecerte
+            tarifas de internet, televisión y móvil baratas, con el mejor servicio.
           </MKTypography>
         </Grid>
       </Container>
@@ -87,4 +60,4 @@ function BuiltByDevelopers() {
   );
 }
 
-export default BuiltByDevelopers;
+export default TrabajamosContigo;
