@@ -43,6 +43,7 @@ import Icon from "@mui/material/Icon";
 
 // Pages
 import TarifasMoviles from "layouts/pages/landing-pages/tarifasMoviles";
+import ContactUs from "pages/LandingPages/ContactUs";
 
 // Sections
 import PageHeaders from "layouts/sections/page-sections/page-headers";
@@ -79,11 +80,11 @@ const routes = [
             route: "/pages/landing-pages/tarifasMoviles",
             component: <TarifasMoviles />,
           },
-          // {
-          //   name: "contact us",
-          //   route: "/pages/landing-pages/contact-us",
-          //   component: <ContactUs />,
-          // },
+          {
+            name: "contacto",
+            route: "/pages/landing-pages/contact-us",
+            component: <ContactUs />,
+          },
           // {
           //   name: "author",
           //   route: "/pages/landing-pages/author",

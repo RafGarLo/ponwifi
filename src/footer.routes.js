@@ -22,18 +22,18 @@ export default {
     },
   ],
   menus: [
-    {
-      name: "Nuestra Empresa",
-      items: [
-        { name: "about us", href: "https://www.creative-tim.com/presentation" },
-        { name: "freebies", href: "https://www.creative-tim.com/templates/free" },
-        { name: "blog", href: "https://www.creative-tim.com/blog" },
-      ],
-    },
+    // {
+    //   name: "Nuestra Empresa",
+    //   items: [
+    //     { name: "about us", href: "https://www.creative-tim.com/presentation" },
+    //     { name: "freebies", href: "https://www.creative-tim.com/templates/free" },
+    //     { name: "blog", href: "https://www.creative-tim.com/blog" },
+    //   ],
+    // },
     {
       name: "Contacto",
       items: [
-        { name: "contact us", href: "https://www.creative-tim.com/contact-us" },
+        { name: "contacto", href: "https://www.ponwifi.es/pages/landing-pages/contact-us" },
         { name: "custom development", href: "https://services.creative-tim.com/" },
       ],
     },

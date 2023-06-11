@@ -27,8 +27,8 @@ import DefaultNavbar from "examples/Navbars/DefaultNavbar";
 import DefaultFooter from "examples/Footers/DefaultFooter";
 
 // Tarifas Moviles page sections
-import Information from "pages/LandingPages/tarifasMoviles/sections/Information";
-import Team from "pages/LandingPages/tarifasMoviles/sections/Team";
+import InformationMoviles from "pages/LandingPages/tarifasMoviles/sections/InformationMoviles";
+import TarifasCompartidas from "pages/LandingPages/tarifasMoviles/sections/TarifasCompartidas";
 
 // Routes
 import routes from "routes";
@@ -91,7 +91,8 @@ function TarifasMoviles() {
             </MKTypography>
             <MKTypography variant="body1" color="white" opacity={0.8} mt={1} mb={3}>
               Gigas que se acumulan, una gran relación calidad-precio y nuestro soporte
-              personalizado.
+              personalizado. Aquí te ofrecemos algunas de nuestras tarifas móviles. Gran servicio y
+              gigas que se acumulan cada mes si no los utilizas. ¿Qué más se puede pedir?
             </MKTypography>
           </Grid>
         </Container>
@@ -105,8 +106,10 @@ function TarifasMoviles() {
           boxShadow: ({ boxShadows: { xxl } }) => xxl,
         }}
       >
-        <Information />
-        <Team />
+        {<br />}
+        <InformationMoviles />
+        {<br />}
+        <TarifasCompartidas />
         <Newsletter />
       </Card>
       <MKBox pt={6} px={1} mt={6}>

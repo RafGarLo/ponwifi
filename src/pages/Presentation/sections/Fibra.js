@@ -81,14 +81,14 @@ function Fibra() {
             <Grid container spacing={3} sx={{ mt: { xs: 0, md: 6 } }}>
               <Grid item xs={12} md={6}>
                 <DefaultInfoCard
-                  icon="network_check"
+                  icon="electric_bolt"
                   title="Internet Fibra 600MB"
                   description="600MB de fibra simétrica por tan sólo 30 euros al mes."
                 />
               </Grid>
               <Grid item xs={12} md={6}>
                 <DefaultInfoCard
-                  icon="network_check"
+                  icon="electric_bolt"
                   title="Internet Fibra 1GB"
                   description="1GB de fibra simétrica por tan sólo 38 euros al mes."
                 />

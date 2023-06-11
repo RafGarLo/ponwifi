@@ -46,7 +46,7 @@ function FibraPaquetes() {
               </Grid>
               <Grid item xs={12} md={6}>
                 <DefaultInfoCard
-                  icon="electric_bolt"
+                  icon="network_check"
                   title="Internet Fibra 300MB + Móvil 180GB"
                   description="300MB de fibra simétrica por tan sólo 39 euros al mes."
                 />
@@ -62,7 +62,7 @@ function FibraPaquetes() {
               </Grid>
               <Grid item xs={12} md={6}>
                 <DefaultInfoCard
-                  icon="network_check"
+                  icon="electric_bolt"
                   title="Internet Fibra 600MB + Móvil 270GB"
                   description="600MB de fibra simétrica por tan sólo 46 euros al mes."
                 />

@@ -27,7 +27,8 @@ import MuiLink from "@mui/material/Link";
 import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
 
-function FilledInfoCard({ variant, color, icon, title, description, action }) {
+// eslint-disable-next-line no-unused-vars
+function FilledInfoCard({ variant, color, icon, title, description, descriptionTwo, action }) {
   const buttonStyles = {
     width: "max-content",
     display: "flex",
@@ -56,7 +57,7 @@ function FilledInfoCard({ variant, color, icon, title, description, action }) {
     <MKBox
       display={{ xs: "block", md: "flex" }}
       variant={variant}
-      bgColor={variant === "contained" ? "grey-100" : color}
+      bgColor={variant === "contained" ? "grey-200" : color}
       borderRadius="xl"
       pt={3.5}
       pb={3}
@@ -85,9 +86,17 @@ function FilledInfoCard({ variant, color, icon, title, description, action }) {
           display="block"
           variant="body2"
           color={variant === "contained" || color === "light" ? "text" : "white"}
-          mb={2}
+          mb={1}
         >
           {description}
+        </MKTypography>
+        <MKTypography
+          display="block"
+          variant="body2"
+          color={variant === "contained" || color === "light" ? "text" : "white"}
+          mb={2}
+        >
+          {descriptionTwo}
         </MKTypography>
         {action && action.type === "external" ? (
           <MKTypography
@@ -143,6 +152,7 @@ FilledInfoCard.propTypes = {
   icon: PropTypes.node.isRequired,
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
+  descriptionTwo: PropTypes.string,
   action: PropTypes.oneOfType([
     PropTypes.bool,
     PropTypes.shape({

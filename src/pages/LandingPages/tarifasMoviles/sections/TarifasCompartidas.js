@@ -29,7 +29,7 @@ import compartida_1 from "assets/images/compartida_1.jpg";
 import compartida_2 from "assets/images/compartida_2.jpg";
 import compartida_4 from "assets/images/compartida_4.jpg";
 
-function Team() {
+function TarifasCompartidas() {
   return (
     <MKBox
       component="section"
@@ -99,4 +99,4 @@ function Team() {
   );
 }
 
-export default Team;
+export default TarifasCompartidas;
