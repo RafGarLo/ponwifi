@@ -27,8 +27,8 @@ import DefaultNavbar from "examples/Navbars/DefaultNavbar";
 import DefaultFooter from "examples/Footers/DefaultFooter";
 
 // Tarifas Moviles page sections
-import Information from "pages/LandingPages/tarifasMoviles/sections/Information";
-import Team from "pages/LandingPages/tarifasMoviles/sections/Team";
+import Tarifas from "./sections/tarifas";
+import TarifasCompartidas from "./sections/tarifasCompartidas";
 
 // Routes
 import routes from "routes";
@@ -36,7 +36,6 @@ import footerRoutes from "footer.routes";
 
 // Images
 import tarifas_moviles from "assets/images/tarifas_moviles.webp";
-import Newsletter from "./sections/Newsletter";
 
 function TarifasMoviles() {
   return (
@@ -91,7 +90,7 @@ function TarifasMoviles() {
             </MKTypography>
             <MKTypography variant="body1" color="white" opacity={0.8} mt={1} mb={3}>
               Gigas que se acumulan, una gran relación calidad-precio y nuestro soporte
-              personalizado.
+              personalizado. ¿Qué más se puede pedir?
             </MKTypography>
           </Grid>
         </Container>
@@ -105,9 +104,8 @@ function TarifasMoviles() {
           boxShadow: ({ boxShadows: { xxl } }) => xxl,
         }}
       >
-        <Information />
-        <Team />
-        <Newsletter />
+        <Tarifas />
+        <TarifasCompartidas />
       </Card>
       <MKBox pt={6} px={1} mt={6}>
         <DefaultFooter content={footerRoutes} />

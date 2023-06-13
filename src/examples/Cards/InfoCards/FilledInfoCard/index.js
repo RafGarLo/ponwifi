@@ -27,7 +27,7 @@ import MuiLink from "@mui/material/Link";
 import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
 
-function FilledInfoCard({ variant, color, icon, title, description, action }) {
+function FilledInfoCard({ variant, color, icon, title, description, descriptionTwo, action }) {
   const buttonStyles = {
     width: "max-content",
     display: "flex",
@@ -77,7 +77,7 @@ function FilledInfoCard({ variant, color, icon, title, description, action }) {
           variant="5"
           color={variant === "contained" || color === "light" ? "dark" : "white"}
           fontWeight="bold"
-          mb={1}
+          mb={1.5}
         >
           {title}
         </MKTypography>
@@ -85,9 +85,17 @@ function FilledInfoCard({ variant, color, icon, title, description, action }) {
           display="block"
           variant="body2"
           color={variant === "contained" || color === "light" ? "text" : "white"}
-          mb={2}
+          mb={1}
         >
           {description}
+        </MKTypography>
+        <MKTypography
+          display="block"
+          variant="body2"
+          color={variant === "contained" || color === "light" ? "text" : "white"}
+          mb={1}
+        >
+          {descriptionTwo}
         </MKTypography>
         {action && action.type === "external" ? (
           <MKTypography
@@ -143,6 +151,7 @@ FilledInfoCard.propTypes = {
   icon: PropTypes.node.isRequired,
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
+  descriptionTwo: PropTypes.string,
   action: PropTypes.oneOfType([
     PropTypes.bool,
     PropTypes.shape({
