@@ -99,6 +99,7 @@ function Tarifas() {
               <MKBox mb={5}>
                 <FilledInfoCard
                   variant="gradient"
+                  align="center"
                   icon="star"
                   title="Triple Gigas 3 - La Brutal"
                   description="Llamadas ilimitadas + 270GB de datos"
