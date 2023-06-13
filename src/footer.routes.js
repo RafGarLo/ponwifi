@@ -32,10 +32,7 @@ export default {
     },
     {
       name: "Contacto",
-      items: [
-        { name: "contact us", href: "https://www.creative-tim.com/contact-us" },
-        { name: "custom development", href: "https://services.creative-tim.com/" },
-      ],
+      items: [{ name: "contacto", href: "https://www.ponwifi.es/pages/landingPages/contacto" }],
     },
     {
       name: "legal",

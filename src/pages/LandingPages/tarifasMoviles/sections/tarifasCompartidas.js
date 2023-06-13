@@ -29,7 +29,7 @@ import compartida_1 from "assets/images/compartida_1.jpg";
 import compartida_2 from "assets/images/compartida_2.jpg";
 import compartida_4 from "assets/images/compartida_4.jpg";
 
-function Team() {
+function TarifasCompartidas() {
   return (
     <MKBox
       component="section"
@@ -83,20 +83,10 @@ function Team() {
               />
             </MKBox>
           </Grid>
-          {/* <Grid item xs={12} lg={6}>
-            <MKBox mb={{ xs: 1, lg: 0 }}>
-              <HorizontalTeamCard
-                image={compartida_3}
-                name="Marquez Garcia"
-                position={{ color: "info", label: "JS Developer" }}
-                description="Artist is a term applied to a person who engages in an activity deemed to be an art."
-              />
-            </MKBox>
-          </Grid> */}
         </Grid>
       </Container>
     </MKBox>
   );
 }
 
-export default Team;
+export default TarifasCompartidas;
