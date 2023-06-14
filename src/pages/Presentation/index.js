@@ -24,7 +24,7 @@ import MKTypography from "components/MKTypography";
 
 // Material Kit 2 React examples
 import DefaultNavbar from "examples/Navbars/DefaultNavbar";
-import DefaultFooter from "examples/Footers/DefaultFooter";
+import CenteredFooter from "examples/Footers/CenteredFooter";
 
 // Presentation page sections
 import Fibra from "pages/Presentation/sections/Fibra";
@@ -110,7 +110,7 @@ function Presentation() {
         <FibraPaquetes />
       </Card>
       <MKBox pt={6} px={1} mt={6}>
-        <DefaultFooter content={footerRoutes} />
+        <CenteredFooter content={footerRoutes} />
       </MKBox>
     </>
   );
