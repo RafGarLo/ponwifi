@@ -44,6 +44,7 @@ import Icon from "@mui/material/Icon";
 // Pages
 import TarifasMoviles from "layouts/pages/landing-pages/tarifasMoviles";
 import Contacto from "layouts/pages/landing-pages/contacto";
+import PoliticaPrivacidad from "pages/LandingPages/PoliticaPrivacidad";
 
 // Sections
 import PageHeaders from "layouts/sections/page-sections/page-headers";
@@ -85,11 +86,11 @@ const routes = [
             route: "/pages/landing-pages/contacto",
             component: <Contacto />,
           },
-          // {
-          //   name: "author",
-          //   route: "/pages/landing-pages/author",
-          //   component: <Author />,
-          // },
+          {
+            name: "Politica de Privacidad",
+            route: "/pages/landing-pages/politicaPrivacidad",
+            component: <PoliticaPrivacidad />,
+          },
         ],
       },
     ],

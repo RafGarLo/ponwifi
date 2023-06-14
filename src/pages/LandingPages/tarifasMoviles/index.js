@@ -24,7 +24,6 @@ import MKTypography from "components/MKTypography";
 
 // Material Kit 2 React examples
 import DefaultNavbar from "examples/Navbars/DefaultNavbar";
-import DefaultFooter from "examples/Footers/DefaultFooter";
 
 // Tarifas Moviles page sections
 import Tarifas from "./sections/tarifas";
@@ -36,6 +35,7 @@ import footerRoutes from "footer.routes";
 
 // Images
 import tarifas_moviles from "assets/images/tarifas_moviles.webp";
+import CenteredFooter from "examples/Footers/CenteredFooter";
 
 function TarifasMoviles() {
   return (
@@ -108,7 +108,7 @@ function TarifasMoviles() {
         <TarifasCompartidas />
       </Card>
       <MKBox pt={6} px={1} mt={6}>
-        <DefaultFooter content={footerRoutes} />
+        <CenteredFooter content={footerRoutes} />
       </MKBox>
     </>
   );

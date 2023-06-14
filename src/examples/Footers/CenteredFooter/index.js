@@ -23,10 +23,7 @@ import Stack from "@mui/material/Stack";
 
 // @mui icons
 import FacebookIcon from "@mui/icons-material/Facebook";
-import TwitterIcon from "@mui/icons-material/Twitter";
 import InstagramIcon from "@mui/icons-material/Instagram";
-import PinterestIcon from "@mui/icons-material/Pinterest";
-import GitHubIcon from "@mui/icons-material/GitHub";
 
 // Material Kit 2 React components
 import MKBox from "components/MKBox";
@@ -105,30 +102,24 @@ function CenteredFooter({ company, links, socials, light }) {
 
 // Setting default values for the props of CenteredFooter
 CenteredFooter.defaultProps = {
-  company: { href: "https://www.creative-tim.com/", name: "Creative Tim" },
+  company: { href: "https://www.ponwifi.es", name: "Ponwifi Pontevedra" },
   links: [
-    { href: "https://www.creative-tim.com/", name: "Company" },
-    { href: "https://www.creative-tim.com/presentation", name: "About Us" },
-    { href: "https://www.creative-tim.com/presentation", name: "Team" },
-    { href: "https://www.creative-tim.com/templates/react", name: "Products" },
-    { href: "https://www.creative-tim.com/blog", name: "Blog" },
-    { href: "https://www.creative-tim.com/license", name: "License" },
+    { href: "pages/landing-pages/presentation", name: "Empresa" },
+    { href: "pages/landing-pages//contacto", name: "Contacto" },
+    { href: "/pages/landing-pages/politicaPrivacidad", name: "Política de Privacidad" },
+
+    { href: "https://www.creative-tim.com/license", name: "Licencias" },
   ],
   socials: [
-    { icon: <FacebookIcon fontSize="small" />, link: "https://www.facebook.com/CreativeTim/" },
     {
-      icon: <TwitterIcon fontSize="small" />,
-      link: "https://twitter.com/creativetim",
+      icon: <FacebookIcon fontSize="small" />,
+      link: "https://www.facebook.com/ponwifi.pontevedra.es/",
     },
+
     {
       icon: <InstagramIcon fontSize="small" />,
-      link: "https://www.instagram.com/creativetimofficial/",
+      link: "https://www.facebook.com/ponwifi.pontevedra.com",
     },
-    {
-      icon: <PinterestIcon fontSize="small" />,
-      link: "https://ro.pinterest.com/thecreativetim/",
-    },
-    { icon: <GitHubIcon fontSize="small" />, link: "https://github.com/creativetimofficial" },
   ],
   light: false,
 };

@@ -59,7 +59,7 @@ function TarifasCompartidas() {
                 image={compartida_2}
                 name="La básica"
                 position={{ color: "info" }}
-                description="Llamadas ilimitadas con 50GB a compartir, por tan solo 23€ al mes."
+                description="Hasta 3 líneas con llamadas ilimitadas con 50GB a compartir, por tan solo 23€ al mes."
               />
             </MKBox>
           </Grid>
@@ -69,7 +69,7 @@ function TarifasCompartidas() {
                 image={compartida_1}
                 name="La mediana"
                 position={{ color: "info" }}
-                description="Llamadas ilimitadas con 90GB a compartir, por tan solo 28€ al mes."
+                description="Hasta 3 líneas con llamadas ilimitadas con 90GB a compartir, por tan solo 28€ al mes."
               />
             </MKBox>
           </Grid>
@@ -79,7 +79,7 @@ function TarifasCompartidas() {
                 image={compartida_4}
                 name="La cañera"
                 position={{ color: "info" }}
-                description="Llamadas ilimitadas con 200GB a compartir, pon tan solo 38€ al mes."
+                description="Hasta 3 líneas con llamadas ilimitadas con 200GB a compartir, pon tan solo 38€ al mes."
               />
             </MKBox>
           </Grid>

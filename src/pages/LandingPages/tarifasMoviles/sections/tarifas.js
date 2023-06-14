@@ -21,7 +21,7 @@ import Grid from "@mui/material/Grid";
 import MKBox from "components/MKBox";
 
 // Material Kit 2 React examples
-import FilledInfoCard from "examples/Cards/InfoCards/FilledInfoCard";
+import DefaultReviewCard from "examples/Cards/ReviewCards/DefaultReviewCard";
 
 function Tarifas() {
   return (
@@ -29,81 +29,86 @@ function Tarifas() {
       <Container>
         <Grid container spacing={4} alignItems="center">
           <Grid title="TARIFAS" container justifyContent="flex-start">
-            <Grid item xs={12} md={4}>
-              <MKBox mb={5}>
-                <FilledInfoCard
-                  variant="gradient"
-                  icon="star"
-                  title="La de 6 euros"
-                  description="Llamadas ilimitadas + 8GB de datos"
-                  descriptionTwo="6€ al mes"
+            <Grid item xs={12} md={5} lg={4}>
+              <MKBox mb={4}>
+                <DefaultReviewCard
+                  color="transparent"
+                  rating={2}
+                  name="La de 6 euros"
+                  review="Llamadas ilimitadas + 8GB de datos"
+                  reviewTwo="6€ al mes"
                 />
               </MKBox>
             </Grid>
             <Grid item xs={12} md={4}>
               <MKBox mb={5}>
-                <FilledInfoCard
-                  variant="contained"
-                  icon="star"
-                  title="La de 9 euros"
-                  description="Llamadas ilimitadas + 21GB de datos"
-                  descriptionTwo="9€ al mes"
+                <DefaultReviewCard
+                  color="light"
+                  name="La de 9 euros"
+                  review="Llamadas ilimitadas + 21GB de datos"
+                  reviewTwo="9€ al mes"
+                  rating={2}
                 />
               </MKBox>
             </Grid>
             <Grid item xs={12} md={4}>
               <MKBox mb={5}>
-                <FilledInfoCard
-                  variant="gradient"
-                  icon="star"
-                  title="La de 11 euros"
-                  description="Llamadas ilimitadas + 27GB de datos"
-                  descriptionTwo="11€ al mes"
+                <DefaultReviewCard
+                  color="transparent"
+                  rating={2.5}
+                  name="La de 11 euros"
+                  review="Llamadas ilimitadas + 27GB de datos"
+                  reviewTwo="11€ al mes"
                 />
               </MKBox>
             </Grid>
             <Grid item xs={12} md={4}>
               <MKBox mb={5}>
-                <FilledInfoCard
-                  variant="contained"
-                  icon="star"
-                  title="La de 12 euros"
-                  description="Llamadas ilimitadas + 60GB de datos"
-                  descriptionTwo="12€ al mes"
+                <DefaultReviewCard
+                  color="light"
+                  rating={3}
+                  name="La de 12 euros"
+                  review="Llamadas ilimitadas + 60GB de datos"
+                  reviewTwo="12€ al mes"
                 />
               </MKBox>
             </Grid>
             <Grid item xs={12} md={4}>
               <MKBox mb={5}>
-                <FilledInfoCard
-                  variant="gradient"
-                  icon="star"
-                  title="Triple Gigas 1"
-                  description="Llamadas ilimitadas + 153GB de datos"
-                  descriptionTwo="12,90€ al mes"
+                <DefaultReviewCard
+                  color="transparent"
+                  rating={4}
+                  name="Triple Gigas 1"
+                  review="Llamadas ilimitadas + 153GB de datos"
+                  reviewTwo="12,90€ al mes"
+                />
+              </MKBox>
+            </Grid>
+
+            <Grid item xs={12} md={4}>
+              <MKBox mb={5}>
+                <DefaultReviewCard
+                  color="light"
+                  rating={4.5}
+                  name="Triple Gigas 2"
+                  review="Llamadas ilimitadas + 180GB de datos"
+                  reviewTwo="13,90€ al mes"
                 />
               </MKBox>
             </Grid>
             <Grid item xs={12} md={4}>
               <MKBox mb={5}>
-                <FilledInfoCard
-                  variant="contained"
-                  icon="star"
-                  title="Triple Gigas 2"
-                  description="Llamadas ilimitadas + 180GB de datos"
-                  descriptionTwo="13,90€ al mes"
-                />
+                <DefaultReviewCard color="transparent" rating={""} name="" review="" reviewTwo="" />
               </MKBox>
             </Grid>
-            <Grid item xs={12} md={12}>
+            <Grid item xs={12} md={4}>
               <MKBox mb={5}>
-                <FilledInfoCard
-                  variant="gradient"
-                  align="center"
-                  icon="star"
-                  title="Triple Gigas 3 - La Brutal"
-                  description="Llamadas ilimitadas + 270GB de datos"
-                  descriptionTwo="17,90€ al mes"
+                <DefaultReviewCard
+                  color="success"
+                  rating={5}
+                  name="Triple Gigas 3 - La Brutal"
+                  review="Llamadas ilimitadas + 270GB de datos"
+                  reviewTwo="17,90€ al mes"
                 />
               </MKBox>
             </Grid>
