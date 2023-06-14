@@ -21,10 +21,12 @@ import Card from "@mui/material/Card";
 // Material Kit 2 React components
 import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
+import { useCookies } from "react-cookie";
 
 // Material Kit 2 React examples
 import DefaultNavbar from "examples/Navbars/DefaultNavbar";
 import CenteredFooter from "examples/Footers/CenteredFooter";
+import AlertDialogSlide from "components/CookieConsent/cookieConsentTwo";
 
 // Presentation page sections
 import Fibra from "pages/Presentation/sections/Fibra";
@@ -41,6 +43,8 @@ import footerRoutes from "footer.routes";
 import Blog_Banner_Ponwifi from "assets/images/Blog_Banner_Ponwifi.webp";
 
 function Presentation() {
+  // eslint-disable-next-line no-unused-vars
+  const [cookies] = useCookies(["cookieConsent"]);
   return (
     <>
       <DefaultNavbar
@@ -103,6 +107,7 @@ function Presentation() {
           boxShadow: ({ boxShadows: { xxl } }) => xxl,
         }}
       >
+        {!cookies.cookieConsent && <AlertDialogSlide />}
         <Fibra />
         <Container sx={{ mt: 6 }}>
           <TrabajamosContigo />
