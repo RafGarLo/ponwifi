@@ -118,7 +118,7 @@ CenteredFooter.defaultProps = {
 
     {
       icon: <InstagramIcon fontSize="small" />,
-      link: "https://www.facebook.com/ponwifi.pontevedra.es/",
+      link: "https://www.facebook.com/ponwifi.pontevedra.com",
     },
   ],
   light: false,
