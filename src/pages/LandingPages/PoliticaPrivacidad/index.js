@@ -6,8 +6,8 @@ import CenteredFooter from "examples/Footers/CenteredFooter";
 function PoliticaPrivacidad() {
   return (
     <>
-      <Grid container spacing={3}>
-        <Grid item xs={12} lg={8}>
+      <Grid container spacing={1} p={5}>
+        <Grid item xs align="justify">
           <MKTypography variant="h1" color="info" align="center">
             Aviso Legal
           </MKTypography>
