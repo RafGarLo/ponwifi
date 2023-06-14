@@ -2,10 +2,24 @@ import Grid from "@mui/material/Grid";
 import MKTypography from "components/MKTypography";
 import footerRoutes from "footer.routes";
 import CenteredFooter from "examples/Footers/CenteredFooter";
+import routes from "routes";
+import DefaultNavbar from "examples/Navbars/DefaultNavbar";
 
 function PoliticaPrivacidad() {
   return (
     <>
+      <DefaultNavbar
+        routes={routes}
+        action={{
+          type: "external",
+          route: "https://www.ponwifi.es",
+          label: "HOME",
+          color: "info",
+        }}
+        sticky
+      />
+      <br />
+      <br />
       <Grid container spacing={1} p={5}>
         <Grid item xs align="justify">
           <MKTypography variant="h1" color="info" align="center">
@@ -244,10 +258,10 @@ function PoliticaPrivacidad() {
             sobre datos personales que vayan apareciendo, por lo que exige su lectura, cada vez que
             nos facilite sus datos a través de esta Web.
           </MKTypography>
+          <br />
           <MKTypography variant="h1" color="info" align="center">
             4. Responsabilidades
           </MKTypography>
-          <br />
           <br />
           <MKTypography variant="body2">
             Al poner a disposición del usuario esta página Web queremos ofrecerle un servicio de

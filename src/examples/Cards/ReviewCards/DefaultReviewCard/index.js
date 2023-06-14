@@ -193,7 +193,7 @@ DefaultReviewCard.propTypes = {
   date: PropTypes.string,
   review: PropTypes.string.isRequired,
   reviewTwo: PropTypes.string,
-  rating: PropTypes.oneOf([1, 2, 3, 4, 5]).isRequired,
+  rating: PropTypes.oneOf(["", 1, 2, 2.5, 3, 3.5, 4, 4.5, 5]).isRequired,
 };
 
 export default DefaultReviewCard;

@@ -155,11 +155,12 @@ FilledInfoCard.propTypes = {
   action: PropTypes.oneOfType([
     PropTypes.bool,
     PropTypes.shape({
-      type: PropTypes.oneOf(["external", "internal"]).isRequired,
-      route: PropTypes.string.isRequired,
-      label: PropTypes.string.isRequired,
+      type: PropTypes.oneOf(["external", "internal"]),
+      route: PropTypes.string,
+      label: PropTypes.string,
     }),
   ]),
+  children: PropTypes.node,
 };
 
 export default FilledInfoCard;

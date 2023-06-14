@@ -28,13 +28,16 @@ export default {
     },
     {
       name: "Contacto",
-      items: [{ name: "contacto", href: "https://www.ponwifi.es/pages/landingPages/contacto" }],
+      items: [{ name: "contacto", route: "/pages/landing-pages/contacto" }],
     },
     {
       name: "legal",
       items: [
         { name: "terms & conditions", href: "https://www.creative-tim.com/terms" },
-        { name: "Politica de Privacidad", href: "https://www.creative-tim.com/privacy" },
+        {
+          name: "Politica de Privacidad",
+          href: "https://www.ponwifi.es/pages/landingPages/PoliticaPrivacidad",
+        },
         { name: "licenses (EULA)", href: "https://www.creative-tim.com/license" },
       ],
     },

@@ -15,14 +15,13 @@ Coded by www.creative-tim.com
 
 // @mui material components
 import Grid from "@mui/material/Grid";
-import Container from "@mui/material/Container";
 
 // Material Kit 2 React components
 import MKBox from "components/MKBox";
 
 // Material Kit 2 React examples
 import DefaultNavbar from "examples/Navbars/DefaultNavbar";
-import DefaultFooter from "examples/Footers/DefaultFooter";
+import CenteredFooter from "examples/Footers/CenteredFooter";
 import FilledInfoCard from "examples/Cards/InfoCards/FilledInfoCard";
 
 // Routes
@@ -30,34 +29,24 @@ import routes from "routes";
 import footerRoutes from "footer.routes";
 
 // Image
-import bgImage from "assets/images/illustrations/illustration-reset.jpg";
 
 function Contacto() {
   return (
     <>
-      <MKBox position="fixed" top="0.5rem" width="100%">
-        <DefaultNavbar
-          routes={routes}
-          action={{
-            type: "external",
-            route: "https://www.ponwifi.es",
-            label: "HOME",
-            color: "info",
-          }}
-        />
-      </MKBox>
-      <Grid container spacing={3} alignItems="center">
+      <DefaultNavbar
+        routes={routes}
+        action={{
+          type: "internal",
+          route: "pages/landing-pages/presentation",
+          label: "HOME",
+          color: "info",
+        }}
+        sticky
+      />
+
+      {/* <Grid container spacing={3} alignItems="center">
         <Grid item xs={12} lg={6}>
-          <MKBox
-            display={{ xs: "none", lg: "flex" }}
-            width="calc(100% - 2rem)"
-            height="calc(100vh - 2rem)"
-            borderRadius="lg"
-            ml={2}
-            mt={2}
-            sx={{ backgroundImage: `url(${bgImage})` }}
-          />
-          {/* <Grid
+          <Grid
             item
             xs={12}
             sm={10}
@@ -123,28 +112,30 @@ function Contacto() {
                         fullWidth
                       />
                     </Grid>
-                    {/* <Grid item xs={12}>
-                    <MKInput
-                      variant="standard"
-                      label="What can we help you?"
-                      placeholder="Describe your problem in at least 250 characters"
-                      InputLabelProps={{ shrink: true }}
-                      multiline
-                      fullWidth
-                      rows={6}
-                    />
-                //   </Grid> */}
-          {/* {</Grid>        <Grid container item justifyContent="center" xs={12} mt={5} mb={2}>
-                //   <MKButton type="submit" variant="gradient" color="info">
-                //     Send Message
-                //   </MKButton>
-                // </Grid>  </MKBox>
+                    <Grid item xs={12}>
+                      <MKInput
+                        variant="standard"
+                        label="What can we help you?"
+                        placeholder="Describe your problem in at least 250 characters"
+                        InputLabelProps={{ shrink: true }}
+                        multiline
+                        fullWidth
+                        rows={6}
+                      />
+                    </Grid>
+                  </Grid>
+                  <Grid container item justifyContent="center" xs={12} mt={5} mb={2}>
+                    <MKButton type="submit" variant="gradient" color="info">
+                      Send Message
+                    </MKButton>
+                  </Grid>
+                </MKBox>
               </MKBox>
             </MKBox>
-              </Grid>*/}
+          </Grid>
         </Grid>
-      </Grid>
-      <Container>
+      </Grid> */}
+      <MKBox p={15} minHeight="75vh">
         <Grid container spacing={3}>
           <Grid item xs={12} lg={3}>
             <FilledInfoCard
@@ -180,10 +171,10 @@ function Contacto() {
             />
           </Grid>
         </Grid>
-      </Container>
+      </MKBox>
 
       <MKBox pt={6} px={1} mt={6}>
-        <DefaultFooter content={footerRoutes} />
+        <CenteredFooter content={footerRoutes} />
       </MKBox>
     </>
   );
