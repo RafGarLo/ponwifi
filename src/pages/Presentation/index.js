@@ -50,10 +50,10 @@ function Presentation() {
       <DefaultNavbar
         routes={routes}
         action={{
-          type: "external",
-          route: "https://www.ponwifi.es",
-          label: "HOME",
-          color: "info",
+          type: "internal",
+          route: "pages/landing-pages/presentation",
+          color: "light",
+          label: "home",
         }}
         sticky
       />
@@ -73,7 +73,7 @@ function Presentation() {
             <MKTypography
               variant="h1"
               color="white"
-              mt={-6}
+              mt={2}
               mb={1}
               sx={({ breakpoints, typography: { size } }) => ({
                 [breakpoints.down("md")]: {
@@ -83,16 +83,18 @@ function Presentation() {
             >
               Ponwifi Pontevedra{" "}
             </MKTypography>
-            <MKTypography
-              variant="body1"
-              color="white"
-              textAlign="center"
-              px={{ xs: 6, lg: 12 }}
-              mt={1}
-            >
-              Aquí encontrarás geniales tarifas en telecomunicaciones y gran trato a nuestros
-              clientes.
-            </MKTypography>
+            <MKBox variant="gradient" borderRadius="10px" shadow="5px" opacity={0.7}>
+              <MKTypography
+                variant="body1"
+                color="dark"
+                textAlign="center"
+                px={{ xs: 6, lg: 12 }}
+                mt={1}
+              >
+                Aquí encontrarás geniales tarifas en telecomunicaciones y gran trato a nuestros
+                clientes.
+              </MKTypography>
+            </MKBox>
           </Grid>
         </Container>
       </MKBox>

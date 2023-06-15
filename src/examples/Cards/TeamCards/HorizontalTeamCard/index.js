@@ -71,7 +71,7 @@ HorizontalTeamCard.propTypes = {
       "dark",
       "light",
     ]),
-    label: PropTypes.string.isRequired,
+    label: PropTypes.string,
   }).isRequired,
   description: PropTypes.string.isRequired,
 };

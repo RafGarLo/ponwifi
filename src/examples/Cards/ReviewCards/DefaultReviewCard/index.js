@@ -21,10 +21,9 @@ import Icon from "@mui/material/Icon";
 
 // Material Kit 2 React components
 import MKBox from "components/MKBox";
-import MKAvatar from "components/MKAvatar";
 import MKTypography from "components/MKTypography";
 
-function DefaultReviewCard({ color, image, name, date, review, reviewTwo, rating }) {
+function DefaultReviewCard({ color, name, review, reviewTwo, rating }) {
   const ratings = {
     0.5: [
       <Icon key={1}>star_outline</Icon>,
@@ -106,34 +105,14 @@ function DefaultReviewCard({ color, image, name, date, review, reviewTwo, rating
       shadow={color === "transparent" ? "none" : "md"}
       p={3}
     >
-      {image && (
-        <MKAvatar
-          src={image}
-          alt={name}
-          variant="rounded"
-          size="lg"
-          shadow="md"
-          sx={{ mt: -5, mb: 1 }}
-        />
-      )}
       <MKBox lineHeight={1}>
         <MKTypography
           display="block"
-          variant={image ? "button" : "h6"}
           fontWeight="bold"
           color={color === "transparent" || color === "light" ? "dark" : "white"}
           mb={0.5}
         >
           {name}
-        </MKTypography>
-        <MKTypography
-          variant={image ? "caption" : "button"}
-          fontWeight="regular"
-          lineHeight={1}
-          color={color === "transparent" || color === "light" ? "text" : "white"}
-          sx={{ display: "flex", alignItems: "center" }}
-        >
-          {date}
         </MKTypography>
       </MKBox>
       <MKTypography
@@ -173,6 +152,7 @@ function DefaultReviewCard({ color, image, name, date, review, reviewTwo, rating
 DefaultReviewCard.defaultProps = {
   color: "transparent",
   image: "",
+  input: PropTypes.string.isNotNull,
 };
 
 // Typechecking props for the DefaultReviewCard
@@ -188,12 +168,11 @@ DefaultReviewCard.propTypes = {
     "dark",
     "light",
   ]),
-  image: PropTypes.string,
   name: PropTypes.string.isRequired,
-  date: PropTypes.string,
   review: PropTypes.string.isRequired,
   reviewTwo: PropTypes.string,
   rating: PropTypes.oneOf(["", 1, 2, 2.5, 3, 3.5, 4, 4.5, 5]).isRequired,
+  children: PropTypes.node,
 };
 
 export default DefaultReviewCard;

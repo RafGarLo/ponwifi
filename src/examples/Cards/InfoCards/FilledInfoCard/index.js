@@ -133,6 +133,7 @@ FilledInfoCard.defaultProps = {
   variant: "contained",
   color: "info",
   action: false,
+  input: PropTypes.string.isNotNull,
 };
 
 // Typechecking props for the FilledInfoCard
@@ -148,7 +149,7 @@ FilledInfoCard.propTypes = {
     "light",
     "dark",
   ]),
-  icon: PropTypes.node.isRequired,
+  icon: PropTypes.node,
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   descriptionTwo: PropTypes.string,

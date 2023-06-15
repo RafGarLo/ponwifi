@@ -136,16 +136,16 @@ function Contacto() {
         </Grid>
       </Grid> */}
       <MKBox p={15} minHeight="75vh">
-        <Grid container spacing={3}>
-          <Grid item xs={12} lg={3}>
+        <Grid container direction="row" justifyContent="center" alignItems="center" spacing={3}>
+          <Grid item xs={12} lg={4}>
             <FilledInfoCard
               variant="contained"
               icon="call"
-              title="Llámanos aquí"
+              title="Llámanos aquí   "
               description="986 061 400"
             />
           </Grid>
-          <Grid item xs={12} lg={3}>
+          <Grid item md={12} lg={4}>
             <FilledInfoCard
               variant="contained"
               icon="smartphone"
@@ -153,7 +153,7 @@ function Contacto() {
               description="698 905 120"
             />
           </Grid>
-          <Grid item xs={12} lg={3}>
+          <Grid item md={12} lg={4}>
             <FilledInfoCard
               variant="contained"
               icon="email"
@@ -161,7 +161,7 @@ function Contacto() {
               description="rafael.garcia@ponwifi.es"
             />
           </Grid>
-          <Grid item xs={12} lg={3}>
+          <Grid item md={12} lg={4}>
             <FilledInfoCard
               variant="contained"
               icon="schedule"

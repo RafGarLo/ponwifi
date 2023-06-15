@@ -58,6 +58,7 @@ function TarifasCompartidas() {
               <HorizontalTeamCard
                 image={compartida_2}
                 name="La básica"
+                label="basica"
                 position={{ color: "info" }}
                 description="Hasta 3 líneas con llamadas ilimitadas con 50GB a compartir, por tan solo 23€ al mes."
               />
@@ -68,6 +69,7 @@ function TarifasCompartidas() {
               <HorizontalTeamCard
                 image={compartida_1}
                 name="La mediana"
+                label="mediana"
                 position={{ color: "info" }}
                 description="Hasta 3 líneas con llamadas ilimitadas con 90GB a compartir, por tan solo 28€ al mes."
               />
@@ -78,6 +80,7 @@ function TarifasCompartidas() {
               <HorizontalTeamCard
                 image={compartida_4}
                 name="La cañera"
+                label="cañera"
                 position={{ color: "info" }}
                 description="Hasta 3 líneas con llamadas ilimitadas con 200GB a compartir, pon tan solo 38€ al mes."
               />
