@@ -35,40 +35,6 @@ function FibraPaquetes() {
     <MKBox component="section" py={6} my={6}>
       <Container>
         <Grid container item xs={11} spacing={3} alignItems="center" sx={{ mx: "auto" }}>
-          <Grid item xs={12} lg={7} sx={{ ml: "auto" }}>
-            <Grid container spacing={3}>
-              <Grid item xs={12} md={6}>
-                <DefaultInfoCard
-                  icon="network_check"
-                  title="Internet Fibra 100MB + Móvil 153GB"
-                  description="100MB de fibra simétrica por tan sólo 35 euros al mes."
-                />
-              </Grid>
-              <Grid item xs={12} md={6}>
-                <DefaultInfoCard
-                  icon="electric_bolt"
-                  title="Internet Fibra 300MB + Móvil 180GB"
-                  description="300MB de fibra simétrica por tan sólo 39 euros al mes."
-                />
-              </Grid>
-            </Grid>
-            <Grid container spacing={3} sx={{ mt: { xs: 0, md: 6 } }}>
-              <Grid item xs={12} md={6}>
-                <DefaultInfoCard
-                  icon="electric_bolt"
-                  title="Internet Fibra 600MB + Móvil 153GB"
-                  description="600MB de fibra simétrica por tan sólo 43 euros al mes."
-                />
-              </Grid>
-              <Grid item xs={12} md={6}>
-                <DefaultInfoCard
-                  icon="network_check"
-                  title="Internet Fibra 600MB + Móvil 270GB"
-                  description="600MB de fibra simétrica por tan sólo 46 euros al mes."
-                />
-              </Grid>
-            </Grid>
-          </Grid>
           <Grid item xs={12} lg={4} sx={{ mx: "auto" }}>
             <RotatingCard>
               <RotatingCardFront
@@ -86,14 +52,56 @@ function FibraPaquetes() {
               <RotatingCardBack
                 image={bgBack}
                 title="La zona en la que vives varía el precio."
-                description="Dependiendo de dónde vivas, siempre buscaremos el mejor precio disponible para tí."
+                descriptionService="Dependiendo de dónde vivas, siempre buscaremos el mejor precio disponible para tí."
                 action={{
                   type: "internal",
-                  route: "/sections/page-sections/page-headers",
+                  route: "/pages/landing-pages/contacto",
                   label: "Te esperamos",
                 }}
               />
             </RotatingCard>
+          </Grid>
+          <Grid item xs={12} lg={7} sx={{ ml: "auto" }}>
+            <Grid container spacing={3}>
+              <Grid item xs={12} md={6}>
+                <DefaultInfoCard
+                  icon="network_check"
+                  title="Internet Fibra 100MB + Móvil 153GB"
+                  descriptionService="100MB de fibra simétrica"
+                  descriptionServiceTwo="1 línea móvil con ilimitadas y 153GB"
+                  price="35€"
+                />
+              </Grid>
+              <Grid item xs={12} md={6}>
+                <DefaultInfoCard
+                  icon="network_check"
+                  title="Internet Fibra 300MB + Móvil 180GB"
+                  descriptionService="300MB de fibra simétrica"
+                  descriptionServiceTwo="1 línea móvil con ilimitadas y 180GB"
+                  price="39€"
+                />
+              </Grid>
+            </Grid>
+            <Grid container spacing={3} sx={{ mt: { xs: 0, md: 6 } }}>
+              <Grid item xs={12} md={6}>
+                <DefaultInfoCard
+                  icon="electric_bolt"
+                  title="Internet Fibra 600MB + Móvil 153GB"
+                  descriptionService="600MB de fibra simétrica"
+                  descriptionServiceTwo="1 línea móvil con ilimitadas y 153GB"
+                  price="43€"
+                />
+              </Grid>
+              <Grid item xs={12} md={6}>
+                <DefaultInfoCard
+                  icon="electric_bolt"
+                  title="Internet Fibra 600MB + Móvil 270GB"
+                  descriptionService="600MB de fibra simétrica"
+                  descriptionServiceTwo="1 línea móvil con ilimitadas y 270GB"
+                  price="46€"
+                />
+              </Grid>
+            </Grid>
           </Grid>
         </Grid>
       </Container>

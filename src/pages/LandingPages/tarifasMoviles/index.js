@@ -43,8 +43,8 @@ function TarifasMoviles() {
       <DefaultNavbar
         routes={routes}
         action={{
-          type: "external",
-          route: "https://www.ponwifi.es",
+          type: "internal",
+          route: "pages/landing-pages/presentation",
           label: "Home",
           color: "default",
         }}
@@ -70,6 +70,7 @@ function TarifasMoviles() {
           <Grid
             container
             item
+            mt={5}
             xs={12}
             lg={8}
             justifyContent="center"
@@ -89,7 +90,8 @@ function TarifasMoviles() {
               Tarifas Móviles
             </MKTypography>
             <MKTypography variant="body1" color="white" opacity={0.8} mt={1} mb={3}>
-              Gigas que se acumulan, una gran relación calidad-precio y nuestro soporte
+              Aquí tienes una selección de nuestras tarifas. Si no encuentras la tuya, llámanos, que
+              tenemos más. Gigas que se acumulan, una gran relación calidad-precio y nuestro soporte
               personalizado. ¿Qué más se puede pedir?
             </MKTypography>
           </Grid>

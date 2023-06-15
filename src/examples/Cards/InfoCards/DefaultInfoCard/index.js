@@ -23,7 +23,16 @@ import Icon from "@mui/material/Icon";
 import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
 
-function DefaultInfoCard({ color, icon, title, description, direction, small }) {
+function DefaultInfoCard({
+  color,
+  icon,
+  title,
+  descriptionService,
+  descriptionServiceTwo,
+  price,
+  direction,
+  small,
+}) {
   return (
     <MKBox lineHeight={1} p={direction === "center" ? 2 : 0} textAlign={direction}>
       {typeof icon === "string" ? (
@@ -54,8 +63,28 @@ function DefaultInfoCard({ color, icon, title, description, direction, small }) 
         color="text"
         pr={direction === "left" ? 6 : 0}
         pl={direction === "right" ? 6 : 0}
+        mb={1.5}
       >
-        {description}
+        {descriptionService}
+      </MKTypography>
+      <MKTypography
+        display="block"
+        variant={small ? "button" : "body2"}
+        color="text"
+        pr={direction === "left" ? 6 : 0}
+        pl={direction === "right" ? 6 : 0}
+        mb={1.5}
+      >
+        {descriptionServiceTwo}
+      </MKTypography>
+      <MKTypography
+        display="block"
+        variant="5"
+        fontWeight="bold"
+        mt={direction === "center" ? 1 : 2}
+        mb={1.5}
+      >
+        {price}
       </MKTypography>
     </MKBox>
   );
@@ -82,7 +111,9 @@ DefaultInfoCard.propTypes = {
   ]),
   icon: PropTypes.node.isRequired,
   title: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
+  descriptionService: PropTypes.string.isRequired,
+  descriptionServiceTwo: PropTypes.string,
+  price: PropTypes.string,
   direction: PropTypes.oneOf(["left", "right", "center"]),
   small: PropTypes.bool,
 };

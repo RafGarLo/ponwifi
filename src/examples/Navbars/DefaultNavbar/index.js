@@ -583,7 +583,7 @@ DefaultNavbar.propTypes = {
         "default",
         "white",
       ]),
-      label: PropTypes.string.isRequired,
+      label: PropTypes.string,
     }),
   ]),
   sticky: PropTypes.bool,

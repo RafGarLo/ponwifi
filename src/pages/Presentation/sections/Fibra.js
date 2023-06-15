@@ -47,15 +47,15 @@ function Fibra() {
                     todas sus versiones
                   </>
                 }
-                description="Internet Fibra a la máxima velocidad en zonas de cobertura, e Internet WIMAX donde no llega el resto."
+                descriptionService="Internet Fibra a la máxima velocidad en zonas de cobertura, e Internet WIMAX donde no llega el resto."
               />
               <RotatingCardBack
                 image={bgBack}
                 title="¡No te ovides de tu móvil!"
-                description="Tenemos tarifas móviles que van desde los 6 euros para ahorrar, hasta los 400GB para los que lo quieren todo."
+                descriptionService="Tenemos tarifas móviles que van desde los 6 euros para ahorrar, hasta los 300GB para los que lo quieren todo."
                 action={{
                   type: "internal",
-                  route: "/sections/page-sections/page-headers",
+                  route: "/pages/landing-pages/contacto",
                   label: "Te esperamos",
                 }}
               />
@@ -67,30 +67,34 @@ function Fibra() {
                 <DefaultInfoCard
                   icon="network_check"
                   title="Internet Fibra 100MB"
-                  description="100MB de fibra simétrica por tan sólo 21 euros al mes."
+                  descriptionService="100MB de fibra simétrica"
+                  price="21€"
                 />
               </Grid>
               <Grid item xs={12} md={6}>
                 <DefaultInfoCard
                   icon="network_check"
                   title="Internet Fibra 300MB"
-                  description="300MB de fibra simétrica por tan sólo 25 euros al mes."
+                  descriptionService="300MB de fibra simétrica"
+                  price="25€"
                 />
               </Grid>
             </Grid>
             <Grid container spacing={3} sx={{ mt: { xs: 0, md: 6 } }}>
               <Grid item xs={12} md={6}>
                 <DefaultInfoCard
-                  icon="network_check"
+                  icon="electric_bolt"
                   title="Internet Fibra 600MB"
-                  description="600MB de fibra simétrica por tan sólo 30 euros al mes."
+                  descriptionService="600MB de fibra simétrica"
+                  price="30€"
                 />
               </Grid>
               <Grid item xs={12} md={6}>
                 <DefaultInfoCard
-                  icon="network_check"
+                  icon="electric_bolt"
                   title="Internet Fibra 1GB"
-                  description="1GB de fibra simétrica por tan sólo 38 euros al mes."
+                  descriptionService="1GB de fibra simétrica"
+                  price="38€"
                 />
               </Grid>
             </Grid>
