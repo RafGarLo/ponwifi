@@ -15,9 +15,11 @@ Coded by www.creative-tim.com
 
 // @mui material components
 import Grid from "@mui/material/Grid";
+import Container from "@mui/material/Container";
 
 // Material Kit 2 React components
 import MKBox from "components/MKBox";
+import MKTypography from "components/MKTypography";
 
 // Material Kit 2 React examples
 import DefaultNavbar from "examples/Navbars/DefaultNavbar";
@@ -29,6 +31,7 @@ import routes from "routes";
 import footerRoutes from "footer.routes";
 
 // Image
+import llamada_contacto from "assets/images/llamada_contacto.png";
 
 function Contacto() {
   return (
@@ -38,11 +41,56 @@ function Contacto() {
         action={{
           type: "internal",
           route: "pages/landing-pages/presentation",
-          label: "HOME",
           color: "info",
+          label: "HOME",
         }}
         sticky
       />
+      <MKBox
+        minHeight="70vh"
+        width="100%"
+        sx={{
+          backgroundImage: ({ functions: { linearGradient, rgba }, palette: { gradients } }) =>
+            `${linearGradient(
+              rgba(gradients.dark.main, 0.2),
+              rgba(gradients.dark.state, 0.2)
+            )}, url(${llamada_contacto})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          display: "grid",
+          placeItems: "center",
+        }}
+      >
+        <Container>
+          <Grid
+            container
+            item
+            mt={5}
+            xs={12}
+            lg={8}
+            justifyContent="center"
+            alignItems="center"
+            flexDirection="column"
+            sx={{ mx: "auto", textAlign: "center" }}
+          >
+            <MKTypography
+              variant="h1"
+              color="white"
+              sx={({ breakpoints, typography: { size } }) => ({
+                [breakpoints.down("md")]: {
+                  fontSize: size["3xl"],
+                },
+              })}
+            >
+              Contacto
+            </MKTypography>
+            <MKTypography variant="body1" color="white" opacity={0.8} mt={1} mb={3}>
+              Aquí encontrarás varios métodos de contacto. Usa el que te resulte más cómodo.
+              Recuerda fijarte en nuestro horario de atención al cliente.
+            </MKTypography>
+          </Grid>
+        </Container>
+      </MKBox>
 
       {/* <Grid container spacing={3} alignItems="center">
         <Grid item xs={12} lg={6}>

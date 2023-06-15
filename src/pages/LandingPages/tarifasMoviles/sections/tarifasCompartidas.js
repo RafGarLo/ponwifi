@@ -43,10 +43,10 @@ function TarifasCompartidas() {
       <Container>
         <Grid container>
           <Grid item xs={12} md={8} sx={{ mb: 6 }}>
-            <MKTypography variant="h3" color="white">
+            <MKTypography variant="h3" color="white" mb={4}>
               Las familias compartidas
             </MKTypography>
-            <MKTypography variant="body2" color="white" opacity={0.8}>
+            <MKTypography variant="body2" color="white" opacity={0.8} mb={4}>
               Las familias que comparten se llevan mejor. Hasta 3 líneas. ¡Cuidado! Las tarifas
               compartidas son más económicas, pero los Gigas sin usar no se acumulan.
             </MKTypography>
@@ -54,24 +54,24 @@ function TarifasCompartidas() {
         </Grid>
         <Grid container spacing={3}>
           <Grid item xs={12} lg={6}>
-            <MKBox mb={1}>
+            <MKBox mb={4}>
               <HorizontalTeamCard
                 image={compartida_2}
                 name="La básica"
                 label="basica"
-                position={{ color: "info" }}
-                description="Hasta 3 líneas con llamadas ilimitadas con 50GB a compartir, por tan solo 23€ al mes."
+                position={{ color: "info", label: "23€" }}
+                description="Hasta 3 líneas con llamadas ilimitadas con 50GB a compartir"
               />
             </MKBox>
           </Grid>
           <Grid item xs={12} lg={6}>
-            <MKBox mb={1}>
+            <MKBox mb={4}>
               <HorizontalTeamCard
                 image={compartida_1}
                 name="La mediana"
                 label="mediana"
-                position={{ color: "info" }}
-                description="Hasta 3 líneas con llamadas ilimitadas con 90GB a compartir, por tan solo 28€ al mes."
+                position={{ color: "info", label: "28€" }}
+                description="Hasta 3 líneas con llamadas ilimitadas con 90GB a compartir"
               />
             </MKBox>
           </Grid>
@@ -80,9 +80,8 @@ function TarifasCompartidas() {
               <HorizontalTeamCard
                 image={compartida_4}
                 name="La cañera"
-                label="cañera"
-                position={{ color: "info" }}
-                description="Hasta 3 líneas con llamadas ilimitadas con 200GB a compartir, pon tan solo 38€ al mes."
+                position={{ color: "info", label: "38€" }}
+                description="Hasta 3 líneas con llamadas ilimitadas con 200GB a compartir"
               />
             </MKBox>
           </Grid>

@@ -28,7 +28,7 @@ function Tarifas() {
     <MKBox component="section" py={12}>
       <Container>
         <Grid container spacing={4} alignItems="center">
-          <Grid title="TARIFAS" container justifyContent="flex-start">
+          <Grid container justifyContent="flex-start">
             <Grid item xs={12} md={5} lg={4}>
               <MKBox mb={4}>
                 <DefaultReviewCard
