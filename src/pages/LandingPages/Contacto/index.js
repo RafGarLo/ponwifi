@@ -40,7 +40,7 @@ function Contacto() {
         routes={routes}
         action={{
           type: "internal",
-          route: "pages/landing-pages/presentation",
+          route: "/presentation",
           color: "info",
           label: "HOME",
         }}

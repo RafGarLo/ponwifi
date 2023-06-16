@@ -25,6 +25,9 @@ import Stack from "@mui/material/Stack";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 
+//images
+import color_logo_with_background from "assets/images/color_logo_with_background.png";
+
 // Material Kit 2 React components
 import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
@@ -85,6 +88,13 @@ function CenteredFooter({ company, links, socials, light, route }) {
             {renderSocials}
           </Stack>
         </Grid>
+        <Grid item xs={10} sm={6}>
+          <img
+            src={color_logo_with_background}
+            style={{ maxWidth: "100%", borderRadius: "8px" }}
+            alt="logo ponwifi"
+          ></img>
+        </Grid>
         <Grid item xs={12} lg={8} sx={{ textAlign: "center" }}>
           <MKTypography variant="body2" color={light ? "white" : "secondary"}>
             Copyright &copy; {year} Material by{" "}
@@ -111,7 +121,7 @@ CenteredFooter.defaultProps = {
   company: { href: "https://www.ponwifi.es", name: "Ponwifi Pontevedra" },
   links: [
     { href: "https://www.ponwifi.es", name: "Empresa" },
-    { href: "https://www.ponwifi.es/pages/landing-pages/contacto", name: "Contacto" },
+    { href: "/pages/landing-pages/contacto", name: "Contacto" },
     {
       href: "/pages/landing-pages/politicaPrivacidad",
       name: "Política de Privacidad",

@@ -47,12 +47,12 @@ function Fibra() {
                     todas sus versiones
                   </>
                 }
-                descriptionService="Internet Fibra a la máxima velocidad en zonas de cobertura, e Internet WIMAX donde no llega el resto."
+                description="Internet Fibra a la máxima velocidad en zonas de cobertura, e Internet WIMAX donde no llega el resto."
               />
               <RotatingCardBack
                 image={bgBack}
                 title="¡No te ovides de tu móvil!"
-                descriptionService="Tenemos tarifas móviles que van desde los 6 euros para ahorrar, hasta los 300GB para los que lo quieren todo."
+                description="Tenemos tarifas móviles que van desde los 6 euros para ahorrar, hasta los 300GB para los que lo quieren todo."
                 action={{
                   type: "internal",
                   route: "/pages/landing-pages/contacto",

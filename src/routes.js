@@ -44,7 +44,7 @@ import Icon from "@mui/material/Icon";
 // Pages
 import TarifasMoviles from "layouts/pages/landing-pages/tarifasMoviles";
 import Contacto from "layouts/pages/landing-pages/contacto";
-import PoliticaPrivacidad from "pages/LandingPages/PoliticaPrivacidad";
+import PoliticaPrivacidad from "layouts/pages/landing-pages/politicaPrivacidad";
 
 const routes = [
   {
