@@ -52,7 +52,7 @@ function FibraPaquetes() {
               <RotatingCardBack
                 image={bgBack}
                 title="La zona en la que vives varía el precio."
-                descriptionService="Dependiendo de dónde vivas, siempre buscaremos el mejor precio disponible para tí."
+                description="Dependiendo de dónde vivas, siempre buscaremos el mejor precio disponible para tí."
                 action={{
                   type: "internal",
                   route: "/pages/landing-pages/contacto",

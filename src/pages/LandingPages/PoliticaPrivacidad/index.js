@@ -11,8 +11,8 @@ function PoliticaPrivacidad() {
       <DefaultNavbar
         routes={routes}
         action={{
-          type: "external",
-          route: "https://www.ponwifi.es",
+          type: "internal",
+          route: "/presentation",
           label: "HOME",
           color: "info",
         }}

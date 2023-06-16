@@ -1,3 +1,6 @@
+// React components
+//import { Route, Routes } from "react-router-dom";
+
 // @mui icons
 import FacebookIcon from "@mui/icons-material/Facebook";
 
@@ -24,18 +27,18 @@ export default {
   menus: [
     {
       name: "Nuestra Empresa",
-      items: [{ name: "about us", href: "/pages/landing-pages/presentation" }],
+      items: [{ name: "about us", route: "/presentation" }],
     },
     {
       name: "Contacto",
-      items: [{ name: "contacto", route: "/pages/landing-pages/contacto" }],
+      items: [{ name: "contacto", route: "/contacto" }],
     },
     {
       name: "legal",
       items: [
         {
           name: "Politica de Privacidad",
-          href: "/pages/landing-pages/PoliticaPrivacidad",
+          route: "/PoliticaPrivacidad",
         },
         { name: "licenses (EULA)", href: "https://www.creative-tim.com/license" },
       ],

@@ -25,7 +25,7 @@ import { useCookies } from "react-cookie";
 
 // Material Kit 2 React examples
 import DefaultNavbar from "examples/Navbars/DefaultNavbar";
-
+import CenteredFooter from "examples/Footers/CenteredFooter";
 import AlertDialogSlide from "components/CookieConsent/cookieConsentTwo";
 
 // Presentation page sections
@@ -50,7 +50,7 @@ function Presentation() {
         routes={routes}
         action={{
           type: "internal",
-          route: "pages/landing-pages/presentation",
+          route: "/presentation",
           color: "light",
           label: "home",
         }}
@@ -115,9 +115,9 @@ function Presentation() {
         </Container>
         <FibraPaquetes />
       </Card>
-      {/* <MKBox pt={6} px={1} mt={6}>
-        <CenteredFooter content={footerRoutes} />
-      </MKBox> */}
+      <MKBox pt={6} px={1} mt={6}>
+        <CenteredFooter content={routes} />
+      </MKBox>
     </>
   );
 }
