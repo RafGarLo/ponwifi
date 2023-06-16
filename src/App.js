@@ -25,6 +25,9 @@ import CssBaseline from "@mui/material/CssBaseline";
 // Material Kit 2 React themes
 import theme from "assets/theme";
 import Presentation from "layouts/pages/presentation";
+import TarifasMoviles from "layouts/pages/landing-pages/tarifasMoviles";
+import Contacto from "layouts/pages/landing-pages/contacto";
+import PoliticaPrivacidad from "layouts/pages/landing-pages/politicaPrivacidad";
 
 // Material Kit 2 React routes
 import routes from "routes";
@@ -58,6 +61,10 @@ export default function App() {
         {getRoutes(routes)}
         <Route path="/presentation" element={<Presentation />} />
         <Route path="*" element={<Navigate to="/presentation" />} />
+        <Route path="" element={<Presentation />} />
+        <Route path="/tarifasMoviles" element={<TarifasMoviles />} />
+        <Route path="/contacto" element={<Contacto />} />
+        <Route path="/politicaPrivacidad" element={<PoliticaPrivacidad />} />
       </Routes>
     </ThemeProvider>
   );
