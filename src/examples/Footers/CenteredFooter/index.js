@@ -29,7 +29,7 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
 
-function CenteredFooter({ company, links, socials, light }) {
+function CenteredFooter({ company, links, socials, light, route }) {
   const { href, name } = company;
 
   const year = new Date().getFullYear();
@@ -59,6 +59,12 @@ function CenteredFooter({ company, links, socials, light }) {
       {social.icon}
     </MKTypography>
   ));
+
+  // eslint-disable-next-line no-unused-vars
+  const routeComponent = {
+    component: Link,
+    to: route,
+  };
 
   return (
     <MKBox component="footer" py={6}>
@@ -104,9 +110,12 @@ function CenteredFooter({ company, links, socials, light }) {
 CenteredFooter.defaultProps = {
   company: { href: "https://www.ponwifi.es", name: "Ponwifi Pontevedra" },
   links: [
-    { href: "pages/landing-pages/presentation", name: "Empresa" },
-    { href: "pages/landing-pages/contacto", name: "Contacto" },
-    { href: "pages/landing-pages/politicaPrivacidad", name: "Política de Privacidad" },
+    { href: "https://www.ponwifi.es", name: "Empresa" },
+    { href: "https://www.ponwifi.es/pages/landing-pages/contacto", name: "Contacto" },
+    {
+      href: "/pages/landing-pages/politicaPrivacidad",
+      name: "Política de Privacidad",
+    },
 
     { href: "https://www.creative-tim.com/license", name: "Licencias" },
   ],
@@ -127,6 +136,7 @@ CenteredFooter.defaultProps = {
 // Typechecking props for the CenteredFooter
 CenteredFooter.propTypes = {
   company: PropTypes.objectOf(PropTypes.string),
+  route: PropTypes.string,
   links: PropTypes.arrayOf(PropTypes.oneOfType([PropTypes.object])),
   socials: PropTypes.arrayOf(PropTypes.oneOfType([PropTypes.object])),
   light: PropTypes.bool,
