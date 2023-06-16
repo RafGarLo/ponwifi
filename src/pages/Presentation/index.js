@@ -25,7 +25,7 @@ import { useCookies } from "react-cookie";
 
 // Material Kit 2 React examples
 import DefaultNavbar from "examples/Navbars/DefaultNavbar";
-import CenteredFooter from "examples/Footers/CenteredFooter";
+
 import AlertDialogSlide from "components/CookieConsent/cookieConsentTwo";
 
 // Presentation page sections
@@ -37,7 +37,6 @@ import TrabajamosContigo from "pages/Presentation/components/trabajamosContigo";
 
 // Routes
 import routes from "routes";
-import footerRoutes from "footer.routes";
 
 // Images
 import Blog_Banner_Ponwifi from "assets/images/Blog_Banner_Ponwifi.webp";
@@ -116,9 +115,9 @@ function Presentation() {
         </Container>
         <FibraPaquetes />
       </Card>
-      <MKBox pt={6} px={1} mt={6}>
+      {/* <MKBox pt={6} px={1} mt={6}>
         <CenteredFooter content={footerRoutes} />
-      </MKBox>
+      </MKBox> */}
     </>
   );
 }

@@ -24,7 +24,7 @@ export default {
   menus: [
     {
       name: "Nuestra Empresa",
-      items: [{ name: "about us", href: "https://www.ponwifi.es" }],
+      items: [{ name: "about us", href: "/pages/landing-pages/presentation" }],
     },
     {
       name: "Contacto",
@@ -33,10 +33,9 @@ export default {
     {
       name: "legal",
       items: [
-        { name: "terms & conditions", href: "https://www.creative-tim.com/terms" },
         {
           name: "Politica de Privacidad",
-          href: "https://www.ponwifi.es/pages/landingPages/PoliticaPrivacidad",
+          href: "/pages/landing-pages/PoliticaPrivacidad",
         },
         { name: "licenses (EULA)", href: "https://www.creative-tim.com/license" },
       ],

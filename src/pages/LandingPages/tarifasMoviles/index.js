@@ -31,11 +31,9 @@ import TarifasCompartidas from "./sections/tarifasCompartidas";
 
 // Routes
 import routes from "routes";
-import footerRoutes from "footer.routes";
 
 // Images
 import tarifas_moviles from "assets/images/tarifas_moviles.webp";
-import CenteredFooter from "examples/Footers/CenteredFooter";
 
 function TarifasMoviles() {
   return (
@@ -109,9 +107,9 @@ function TarifasMoviles() {
         <Tarifas />
         <TarifasCompartidas />
       </Card>
-      <MKBox pt={6} px={1} mt={6}>
+      {/* <MKBox pt={6} px={1} mt={6}>
         <CenteredFooter content={footerRoutes} />
-      </MKBox>
+      </MKBox> */}
     </>
   );
 }
