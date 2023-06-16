@@ -23,7 +23,6 @@ import Stack from "@mui/material/Stack";
 
 // @mui icons
 import FacebookIcon from "@mui/icons-material/Facebook";
-import InstagramIcon from "@mui/icons-material/Instagram";
 
 //images
 import color_logo_with_background from "assets/images/color_logo_with_background.png";
@@ -32,23 +31,23 @@ import color_logo_with_background from "assets/images/color_logo_with_background
 import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
 
-function CenteredFooter({ company, links, socials, light, route }) {
+function CenteredFooter({ company, socials, light }) {
   const { href, name } = company;
 
   const year = new Date().getFullYear();
 
-  const renderLinks = links.map((link) => (
-    <MKTypography
-      key={link.name}
-      component={Link}
-      href={link.href}
-      variant="body2"
-      color={light ? "white" : "secondary"}
-      fontWeight="regular"
-    >
-      {link.name}
-    </MKTypography>
-  ));
+  // const renderLinks = links.map((link) => (
+  //   <MKTypography
+  //     key={link.name}
+  //     component={Link}
+  //     href={link.href}
+  //     variant="body2"
+  //     color={light ? "white" : "secondary"}
+  //     fontWeight="regular"
+  //   >
+  //     {link.name}
+  //   </MKTypography>
+  // ));
 
   const renderSocials = socials.map((social) => (
     <MKTypography
@@ -63,16 +62,10 @@ function CenteredFooter({ company, links, socials, light, route }) {
     </MKTypography>
   ));
 
-  // eslint-disable-next-line no-unused-vars
-  const routeComponent = {
-    component: Link,
-    to: route,
-  };
-
   return (
     <MKBox component="footer" py={6}>
       <Grid container justifyContent="center">
-        <Grid item xs={10} lg={8}>
+        {/* <Grid item xs={10} lg={8}>
           <Stack
             direction="row"
             flexWrap="wrap"
@@ -82,7 +75,7 @@ function CenteredFooter({ company, links, socials, light, route }) {
           >
             {renderLinks}
           </Stack>
-        </Grid>
+        </Grid> */}
         <Grid item xs={12} lg={8}>
           <Stack display="flex" direction="row" justifyContent="center" spacing={3} mt={1} mb={3}>
             {renderSocials}
@@ -134,11 +127,6 @@ CenteredFooter.defaultProps = {
       icon: <FacebookIcon fontSize="small" />,
       link: "https://www.facebook.com/ponwifi.pontevedra.es/",
     },
-
-    {
-      icon: <InstagramIcon fontSize="small" />,
-      link: "https://www.facebook.com/ponwifi.pontevedra.com",
-    },
   ],
   light: false,
 };
@@ -146,8 +134,7 @@ CenteredFooter.defaultProps = {
 // Typechecking props for the CenteredFooter
 CenteredFooter.propTypes = {
   company: PropTypes.objectOf(PropTypes.string),
-  route: PropTypes.string,
-  links: PropTypes.arrayOf(PropTypes.oneOfType([PropTypes.object])),
+  //links: PropTypes.arrayOf(PropTypes.oneOfType([PropTypes.object])),
   socials: PropTypes.arrayOf(PropTypes.oneOfType([PropTypes.object])),
   light: PropTypes.bool,
 };
