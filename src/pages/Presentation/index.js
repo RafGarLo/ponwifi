@@ -24,7 +24,7 @@ import MKTypography from "components/MKTypography";
 import { useCookies } from "react-cookie";
 
 // Material Kit 2 React examples
-import DefaultNavbar from "examples/Navbars/DefaultNavbar";
+//import DefaultNavbar from "examples/Navbars/DefaultNavbar";
 import CenteredFooter from "examples/Footers/CenteredFooter";
 import AlertDialogSlide from "components/CookieConsent/cookieConsentTwo";
 
@@ -40,13 +40,14 @@ import routes from "routes";
 
 // Images
 import Blog_Banner_Ponwifi from "assets/images/Blog_Banner_Ponwifi.webp";
+import MyNavbar from "examples/Navbars/myNavbar/myNavbar";
 
 function Presentation() {
   // eslint-disable-next-line no-unused-vars
   const [cookies] = useCookies(["cookieConsent"]);
   return (
     <>
-      <DefaultNavbar
+      {/* <DefaultNavbar
         routes={routes}
         action={{
           type: "internal",
@@ -55,7 +56,8 @@ function Presentation() {
           label: "home",
         }}
         sticky
-      />
+      /> */}
+      <MyNavbar />
       <MKBox
         minHeight="75vh"
         width="100%"
